@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style2.css">
+    <!-- <script src="./src/script.js" defer></script> -->
+</head>
+
+<body>
+
+    <!-- <a href="#" class="whatsapp_link"><img src="./img/solar.png" alt=""></a> -->
+    <div id="topNav">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="text-left">
+                    <a href="#"><i class="fa fa-arrow-left"></i></a>
+                    
+                </div> -->
+                <div class="d-flex justify-content-center">
+                    <ul class="text-center">
+                        <h2><u>Upload New Hoarding</u></h2>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <!-- content -->
+        
+        <div class="container-fluid form_style mt-2">
+                <form class="row g-3 px-4" method="POST" enctype="multipart/form-data">
+                    <div class="form-control col-md-12"style>
+                        <label for="name" class="form-label mt-3"><h3><span style="color:red">Lit Type</span></h3></label>
+                        <div>
+                            <input type="radio" id="Front Lit" name="Front Lit" value="Front Lit" />
+                            <label for="Front Lit">Front Lit</label>
+                            <input type="radio" id="Front Lit" class="ms-4" name="Front Lit" value="Front Lit" />
+                            <label for="Front Lit">No Lit</label>
+                            <input type="radio" id="Front Lit" class="ms-4" name="Front Lit" value="Front Lit" />
+                            <label for="Front Lit">Back Lit</label>
+                        </div>
+                    </div>
+                    <!--Square Feet -->
+                    <div class="col-md-6">
+                        <legend>Height(in feet)</legend>
+                        <input type="text" class="form-control" id="height_feet" name="width">
+                    </div>
+                    <div class="col-md-6">
+                        <legend>width(in feet)</legend>
+                        <input type="text" class="form-control" id="width_feet" name="width">
+                    </div>
+                    <div class="col-md-6">
+                        <legend for="name" class="form-label">Size(Square Feet)</legend>
+                        <input type="text" class="form-control" id="total" name="total">
+                    </div>
+                    <div class="d-grid gap-2 d-md-block">
+                    <button type="button" class="btn btn-primary" id="calculate" name="button">Calculate</button>
+                    </div>
+                    <!--End Square Feet -->
+                    <!--Location DETAILS -->
+                    <div clas="col-md-12">
+                        <h2><u>Location</u></h2>
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="state" name="state" placeholder="State">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="district" name="district" placeholder="District">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="city" name="city/town" placeholder="City/Town">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="area" name="area" placeholder="Area/Street">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="landmark" name="landmark" placeholder="Landmark">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="landmark" name="landmark" placeholder="Extra Information(address)">
+                    </div>
+                    <div  class="col-md-6">
+                        <h2><u>Property Owner</u></h2>
+                    </div>
+                    <div class="col-md-8">
+                        <select name="property" id="inputPassword4" class="form-control-bold" style="font-family: bold;">
+                            <option><span style="font-style:bold;">Property Owner Choose Property Owner</span></option>
+                            <option value="">Twenty First Century</option>
+                            <option value="">Torneto</option>
+                            <option value="">Pappu Outdoor And Media</option>
+                        </select>
+                    </div>
+                    <!--End Location DETAILS -->
+                    <b><hr></b>
+                    <!-- LANDLORD DETAILS -->
+                    <div  class="col-md-12">
+                        <h2><u>Landlord Details</u></h2>
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="state" name="Landlord Name" placeholder="Landlord Name">
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="text" class="form-control" id="district" name="son" placeholder="Son/Daughter/Spouse of">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <h2><u>Location</u></h2>
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="state" name="state" placeholder="State">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="district" name="district" placeholder="District">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="city" name="city/town" placeholder="City/Town">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="area" name="area" placeholder="Area/Street">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="landmark" name="landmark" placeholder="Landmark">
+                    </div>
+                    <div class="col-md-6">
+                    	<input type="text" class="form-control" id="landmark" name="landmark" placeholder="Extra Information(address)">
+                    </div>
+                    <!-- END LANDLORD DETAILS -->
+
+                    <!-- Date -->
+                    <div class="col-md-8 mb-2">
+                    	<input type="date" class="form-control" id="landmark" name="landmark" placeholder="Date of Installation    DD/MM/YYY">
+                    </div>
+
+                    <!--image upload-->
+                    <div class="col-md-6 mt-2">
+                        <label for="name" class="form-label"><h4><u>close view image</u></h4></label>
+                    	<input type="file" class="form-control" id="state" name="close view image" placeholder="">
+                    </div>
+                    <div class="col-md-6  mt-2 ">
+                        <label for="name" class="form-label"><h4><u>Full view image</u></h4></label>
+                        <input type="file" class="form-control" id="district" name="Full view image" placeholder="">
+                    </div>
+                    <!--End image upload-->
+                    <div class="col-12 form-group mt-3 ">
+                        <input type="submit" name="submit" value="UPLOAD" class="btn btn-primary">
+                    </div>
+
+                </form>
+                </div>
+            </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('#calculate').on('click',function(){
+        var v1 =  $('#height_feet').val();
+        var v2 =  $('#width_feet').val();
+   
+        var totalVal = (parseInt(v1) * parseInt(v2));
+        
+        var areaText = " total sq ft";
+        //calculate value for total
+        $("#total").val(totalVal);
+        // set total
+    })
+    
+});
+
+</script>
+</body>
+
+</html>
